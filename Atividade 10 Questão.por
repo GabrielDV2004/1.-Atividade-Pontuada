@@ -3,13 +3,13 @@ programa
 	
 	funcao inicio()
 {
-		// Variavéis
+		// VariavÃ©is
 		real alcool=3.79, gasolina=6.59, valor_com_desconto, litros
 		cadeia combustiveis
 		
 
 		// Pedindo dados
-		escreva("Você deseja álcool ou gasolina: ")
+		escreva("VocÃª deseja Ã¡lcool ou gasolina: ")
 		leia(combustiveis)
 
 		escreva("Quantos litros deseja: ")
@@ -17,23 +17,23 @@ programa
 
 		// Exibindo dados
 		se(litros <= 25 e combustiveis == "A"){
-			escreva("Você recebeu um desconto de 2%. ")
+			escreva("VocÃª recebeu um desconto de 2%. ")
 			valor_com_desconto = (alcool * litros) - 0.02
 			escreva("\nValor com desconto: R$" +valor_com_desconto)
 			
 		}senao se(litros > 25 e combustiveis == "A"){
-			escreva("Você recebeu um desconto de 4%. ")
+			escreva("VocÃª recebeu um desconto de 4%. ")
 			valor_com_desconto = (alcool * litros) - 0.04
 			escreva("\nValor com desconto: R$" +valor_com_desconto)
 			
 	}
 senao se(litros > 25 e combustiveis == "G"){
-			escreva("Você recebeu um desconto de 3%. ")
+			escreva("VocÃª recebeu um desconto de 3%. ")
 			valor_com_desconto = (alcool * litros) - 0.03
 			escreva("\nValor com desconto: R$" +valor_com_desconto)
 			
-	}senao se(litros > 25 e combustiveis == "G"){
-			escreva("Você recebeu um desconto de 5%. ")
+	}senao se(litros <= 25 e combustiveis == "G"){
+			escreva("VocÃª recebeu um desconto de 5%. ")
 			valor_com_desconto = (alcool * litros) - 0.05
 			escreva("\nValor com desconto: R$" +valor_com_desconto)
 		
@@ -42,8 +42,8 @@ senao se(litros > 25 e combustiveis == "G"){
 }
 /* $$$ Portugol Studio $$$ 
  * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
+ * Esta seÃ§Ã£o do arquivo guarda informaÃ§Ãµes do Portugol Studio.
+ * VocÃª pode apagÃ¡-la se estiver utilizando outro editor.
  * 
  * @POSICAO-CURSOR = 1003; 
  * @PONTOS-DE-PARADA = ;
